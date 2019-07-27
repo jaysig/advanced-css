@@ -231,16 +231,19 @@
         height: auto;
         border-radius: 3px;
         background-color: $color-white;
+        -webkit-box-shadow: 0 1.5rem 4rem rgba($color-black, 1.5);
         box-shadow: 0 1.5rem 4rem rgba($color-black, 1.5);
 
         &__side {
             height: auto;
             position: relative;
+            -webkit-box-shadow: none;
             box-shadow: none;
 
             &--back {
                 -webkit-transform: rotateY(0);
                 transform: rotateY(0);
+                -webkit-clip-path: polygon(0 15%, 100% 0, 100% 100%, 0 100%);
                 clip-path: polygon(0 15%, 100% 0, 100% 100%, 0 100%);
             }
         }
